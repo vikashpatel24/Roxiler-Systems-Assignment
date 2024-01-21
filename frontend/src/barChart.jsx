@@ -23,7 +23,7 @@ const BarChart = ({ selectedMonth }) => {
     const fetchBarChartData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/barChart?month=${selectedMonth}`
+          `https://roxiler-assignment-backend.vercel.app/api/barChart?month=${selectedMonth}`
         );
         const data = await response.json();
 
